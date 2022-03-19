@@ -11,6 +11,7 @@ namespace AbstractExample
             var choice = Console.ReadLine();
 
             Animal animal = null;
+            AnimalBarry animalbarry = null;
 
             if (choice == "1")
             {
@@ -20,9 +21,16 @@ namespace AbstractExample
             {
                 animal = new Dog();
             }
+            
+            else if (choice == "3")
+            {
+                animalbarry = new Owl();
+            }
 
             animal?.MakeNoise();
             animal?.Sleep();
+            animalbarry?.MakeNoise();
+            animalbarry?.Sleep();
         }
     }
 }
